@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "preserve": "npm run build",
-    "serve": "cross-env NODE_ENV=development concurrently\"tsc --watch\"\"nodemon -q dist/index.js\"",
+    "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,6 @@
   "author": "Thiago Martins Escaliante",
   "license": "MIT",
   "dependencies": {
-    "@types/body-parser": "^1.19.3",
     "@types/express": "^4.17.18",
     "@types/node": "^20.7.1",
     "body-parser": "^1.20.2",
