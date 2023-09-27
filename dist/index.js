@@ -12,7 +12,5 @@ const PORT = process.env.PORT || 3000;
 app.use((0, helmet_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
-app.get('/', (req, res) => {
-    res.send('<h1>Hello World. Welcome to my small practice!</h1>');
-});
+app.use(express_1.default.static('src'));
 app.listen(PORT, () => console.log(`Server running on the port ${PORT}`));
